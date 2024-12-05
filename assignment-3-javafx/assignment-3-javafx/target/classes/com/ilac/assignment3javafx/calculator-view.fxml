@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.ilac.assignment3javafx.CalculatorController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <children>
+        <TextField fx:id="number1" layoutX="51.0" layoutY="174.0" prefHeight="53.0" prefWidth="248.0" promptText="Type the first number.">
+        </TextField>
+        <TextField fx:id="number2" layoutX="51.0" layoutY="237.0" prefHeight="53.0" prefWidth="248.0" promptText="Type the second number.">
+        </TextField>
+
+        <Button fx:id="bSum" layoutX="130.0" layoutY="300.0" mnemonicParsing="false" onAction="#sum" prefHeight="53.0" prefWidth="90.0" text="Sum" />
+        <Button fx:id="bSubtraction" layoutX="230.0" layoutY="300.0" mnemonicParsing="false" onAction="#subtraction" prefHeight="53.0" prefWidth="90.0" text="Subtraction" />
+
+        <Button fx:id="bMultiplication" layoutX="130.0" layoutY="360.0" mnemonicParsing="false" onAction="#multiplication" prefHeight="53.0" prefWidth="90.0" text="Multiplication" />
+        <Button fx:id="bDivision" layoutX="230.0" layoutY="360.0" mnemonicParsing="false" onAction="#division" prefHeight="53.0" prefWidth="90.0" text="Division" />
+
+        <Label alignment="CENTER" contentDisplay="TOP" layoutX="94.0" layoutY="109.0" prefHeight="53.0" prefWidth="213.0" text="Type your number in each field.">
+        </Label>
+        <Label fx:id="result" alignment="CENTER" layoutX="40.0" layoutY="400.0" prefHeight="69.0">
+        </Label>
+    </children>
+
+</AnchorPane>
